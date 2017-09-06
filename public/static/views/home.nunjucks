@@ -8,7 +8,9 @@
 
 {% block Content %}
 
-    <h1>Welcome to XBP</h1>
+    <h1>Welcome Home</h1>
+
+    {{ html }}
 
 {% endblock %}
 

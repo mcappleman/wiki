@@ -8,7 +8,7 @@ require('dotenv').config({ path: `${ROOT_DIR}/.env` });
 
 // Import connections
 require(`${ROOT_DIR}/config/mongoose`);
-// require(`${ROOT_DIR}/config/redis`);
+require(`${ROOT_DIR}/config/redis`);
 
 // Import Components
 var express = require('express');
