@@ -8,6 +8,8 @@ if (!accessToken) {
 
 }
 
+verify();
+
 function submitWiki() {
 
 	var html = tinyMCE.get('editor').getContent()
@@ -33,5 +35,30 @@ function submitWiki() {
 	};
 	var data = JSON.stringify({ wiki: html });
 	xhr.send(data);
+
+}
+
+function verify() {
+
+	var xhr = new XMLHttpRequest();
+	var url = '/api/verify';
+
+	xhr.open('GET', url, true);
+	xhr.setRequestHeader('Authorization', accessToken);
+	// xhr.setRequestHeader('Content-Type', 'application/json');
+	xhr.onreadystatechange = function() {
+
+		if (xhr.readyState === 4 && xhr.status === 200) {
+
+			var json = JSON.parse(xhr.responseText);
+
+		} else if (xhr.readyState === 4 && xhr.status !== 200) {
+
+			window.location.href = '/login';
+
+		}
+
+	};
+	xhr.send();
 
 }

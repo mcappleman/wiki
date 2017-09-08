@@ -10,11 +10,19 @@
 
     <h1 class="header">Please Login</h1>
 
-    <form id="loginForm" onSubmit="return false;">
-	    <label for="username">Username: <input type="text" id="username" name="username" /></label><br>
-	    <label for="password">Password: <input type="password" id="password" name="password" /></label><br>
-	    <button onClick="login()" id="submit" type="submit">Login</button>
-    </form>
+    <div class="body">
+	    <form id="loginForm" onSubmit="return false;">
+	    	<div class="form-line">
+	    		<label for="username">Username: <input type="text" id="username" name="username" /></label>
+		    </div>
+	    	<div class="form-line">
+	    		<label for="password">Password: <input type="password" id="password" name="password" /></label><br>
+		    </div>
+		    <div class="submit-line">
+		    	<button onClick="login()" id="submit" type="submit">Login</button>
+		    </div>
+	    </form>
+    </div>
 
 
 {% endblock %}
