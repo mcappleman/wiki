@@ -2,13 +2,13 @@
 
 {% block CSS %}
 
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/login.css">
 
 {% endblock %}
 
 {% block Content %}
 
-    <h1>Please Login</h1>
+    <h1 class="header">Please Login</h1>
 
     <form id="loginForm" onSubmit="return false;">
 	    <label for="username">Username: <input type="text" id="username" name="username" /></label><br>

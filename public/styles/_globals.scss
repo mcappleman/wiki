@@ -3,6 +3,7 @@
 
 // Vars
 $blue: cornflowerblue;
+$submitGreen: #14F414;
 
 // Functional Components
 // @import mixins
@@ -35,4 +36,7 @@ a {
 
 .rel {
     position: relative;
+}
+h1.header {
+	text-align: center
 }

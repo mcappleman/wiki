@@ -1,0 +1,22 @@
+@import '../globals';
+
+form {
+	margin: auto;
+	padding: 15px;
+	border: solid 1px #eee;
+}
+
+form button {
+	width: 100%;
+	border-radius: 5px;
+	background: $submitGreen
+}
+
+form label {
+	font-size: 16px;
+}
+
+form input {
+	border-radius: 0;
+	padding: 5px;
+}
