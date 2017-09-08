@@ -1,0 +1,26 @@
+{% extends "./layout.nunjucks" %}
+
+{% block CSS %}
+
+    <link rel="stylesheet" href="/css/home.css">
+
+{% endblock %}
+
+{% block Content %}
+
+    <h1>Please Login</h1>
+
+    <form id="loginForm" onSubmit="return false;">
+	    <label for="username">Username: <input type="text" id="username" name="username" /></label><br>
+	    <label for="password">Password: <input type="password" id="password" name="password" /></label><br>
+	    <button onClick="login()" id="submit" type="submit">Login</button>
+    </form>
+
+
+{% endblock %}
+
+{% block Scripts %}
+
+	<script src="/js/login.js"></script>
+
+{% endblock %}

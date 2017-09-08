@@ -10,7 +10,7 @@
 
     <h1>Welcome Home</h1>
 
-    {{ html | safe }}
+    {{ wiki.html | safe }}
 
 {% endblock %}
 

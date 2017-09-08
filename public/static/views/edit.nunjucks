@@ -1,0 +1,25 @@
+{% extends "./layout.nunjucks" %}
+
+{% block CSS %}
+
+    <link rel="stylesheet" href="/css/home.css">
+
+{% endblock %}
+
+{% block Content %}
+
+    <h1>Edit Thy Wiki</h1>
+
+    <textarea id="editor">{{ wiki.html }}</textarea>
+
+    <button type="button" onClick="submitWiki()">Submit</button>
+
+{% endblock %}
+
+{% block Scripts %}
+
+	<script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=f5i1ceoi6kvjwzj5smpmc7q2dk3k4lpy45zxidx9p58nco0r"></script>
+	<script>tinymce.init({ selector:'textarea' });</script>
+	<script src="/js/edit.js"></script>
+
+{% endblock %}
