@@ -10,7 +10,9 @@
 
     <h1>DKE Fantasy Football</h1>
 
-    {{ wiki.html | safe }}
+    <div class="content-container">
+    	{{ wiki.html | safe }}
+    </div>
 
 {% endblock %}
 
