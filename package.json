@@ -4,6 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
+    "bluebird": "3.5.0",
     "body-parser": "1.16.1",
     "cookie-parser": "1.4.3",
     "dotenv": "4.0.0",
