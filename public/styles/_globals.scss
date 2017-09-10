@@ -3,7 +3,7 @@
 
 // Vars
 $blue: cornflowerblue;
-$submitGreen: #14F414;
+$submitGreen: #0EAC0E;
 
 // Functional Components
 // @import mixins
@@ -45,4 +45,5 @@ button {
 	border-style: none;
 	padding: 10px;
 	color: #fff;
+	border-radius: 0;
 }

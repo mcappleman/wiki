@@ -8,7 +8,7 @@
 
 {% block Content %}
 
-    <h1>Welcome Home</h1>
+    <h1>DKE Fantasy Football</h1>
 
     {{ wiki.html | safe }}
 

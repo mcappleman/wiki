@@ -1,8 +1,17 @@
 @import '../globals';
 
+.content-container {
+	margin: 10px;
+}
+
+.footer {
+	text-align: right;
+}
+
 .submit-btn {
-	width: 100%;
-	border-radius: 5px;
+	min-width: 200px;
+	margin-top: 10px;
 	border: none;
-	color: $submitGreen;
+	background: $submitGreen;
+	color: #fff;
 }
